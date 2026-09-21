@@ -1,7 +1,15 @@
 {
   "name": "brain-agent-skill",
-  "version": "0.1.2",
-  "private": true,
+  "version": "0.1.3",
+  "description": "Agent-generic Brain skill and local MCP onboarding adapter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neha-nupoor/brain-agent-skill.git"
+  },
+  "homepage": "https://github.com/neha-nupoor/brain-agent-skill#readme",
+  "bugs": "https://github.com/neha-nupoor/brain-agent-skill/issues",
+  "keywords": ["agent-skill", "mcp", "memory", "brain"],
+  "publishConfig": { "access": "public" },
   "type": "module",
   "engines": { "node": ">=22" },
   "bin": { "brain-onboard": "bin/brain.mjs" },

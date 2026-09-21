@@ -28,7 +28,7 @@ Preview the public package directly from its immutable release tag. This needs n
 GitHub login, Brain service credential, or production configuration:
 
 ```sh
-npx --yes github:neha-nupoor/brain-agent-skill#v0.1.2 preview
+npx --yes brain-agent-skill@0.1.3 preview
 ```
 
 Preview writes nothing and prints the exact targets and both client configurations.
@@ -37,7 +37,7 @@ endpoint and optional read-only journal remote supplied by the Brain operator
 (neither is a secret):
 
 ```sh
-npm install --global github:neha-nupoor/brain-agent-skill#v0.1.2
+npm install --global brain-agent-skill@0.1.3
 export BRAIN_MCP_URL='https://YOUR-BRAIN-ENDPOINT/mcp'
 export BRAIN_JOURNAL_REMOTE='git@github.com:YOUR-OWNER/YOUR-JOURNAL.git'
 brain-onboard install
@@ -97,7 +97,7 @@ command hook can also run `node /absolute/path/bin/brain.mjs bootstrap` and inje
 its JSON into context. The built-in MCP initialized hook requires no host-specific
 hook configuration. Automatic fetch does not force a host to consume context.
 
-Bundle version `0.1.2` expects contract `brain-v2` and Guide `2026-09-20.3`; its
+Bundle version `0.1.3` expects contract `brain-v2` and Guide `2026-09-20.3`; its
 machine-readable agreement is `brain/versions.json`. Runtime validators are the exact
 centrally owned source snapshot under `brain/contracts/`, with repository/revision/hash
 provenance. They validate full responses and typed metadata, including canonical
