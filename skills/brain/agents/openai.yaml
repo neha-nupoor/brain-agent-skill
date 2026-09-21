@@ -1,0 +1,12 @@
+interface:
+  display_name: "Brain"
+  short_description: "Recall and maintain shared Brain context"
+  default_prompt: "Use $brain to recall the context for this project."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "brain"
+      description: "Brain MCP: bootstrap, central Guide, canonical operations, and read-only journal access"
+      transport: "stdio"
+policy:
+  allow_implicit_invocation: true
